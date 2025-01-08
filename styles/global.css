@@ -1,0 +1,53 @@
+:root {
+  --background-primary: #F4F5FB;
+  --background-secondary: #FFFFFF;
+  --color-brand: #CA3884;
+  --color-brand-hover: #A52C6B;
+  --color-danger: #C93847;
+  --content-primary: #080B12;
+  --content-secondary: #374151; 
+  --content-tertiary: #9CA3AF;
+  --always-white: #FFFFFF;
+  --border-primary: #D1D5DB;
+  --border-hover: #B9C2D0;
+  --ff-inter: "Inter", serif;
+  --fs-lg: 1.5rem;
+  --fs-md: 1rem;
+  --fs-sm: 0.875rem;
+  --fw-bold: 700;
+  --fw-semibold: 600;
+  --fw-medium: 500;
+  --px-md: 2rem;
+}
+
+body {
+  max-width: 375px;
+  margin-inline: auto;
+  font-family: var(--ff-inter);
+}
+
+h1 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+}
+
+label {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+}
+
+p {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+}
+
+a {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+}
+
+@media (width >= 80em) {
+  body {
+    max-width: 80em;
+  }
+}
