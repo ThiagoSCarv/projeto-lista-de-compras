@@ -1,0 +1,48 @@
+.input-wrapper {
+  width: 100%;
+  height: 100%;
+  & input {
+    background-color: var(--background-secondary);
+    appearance: none;
+    border: 2px solid var(--border-primary);
+    width: 100%;
+    max-width: 18rem;
+    height: 100%;
+    padding-inline: 0;
+    padding-block: .75rem;
+    border-radius: .75rem;
+    padding-left: 1rem;
+  }
+  & input::placeholder {
+    color: var(--content-tertiary);
+  }
+  & input:hover {
+    border: 2px solid var(--border-hover);
+  }
+  & input:focus {
+    border: 2px solid var(--color-brand);
+    outline: 0;
+    color: var(--content-primary);
+  }
+}
+& .btn {
+  background-color: var(--color-brand);
+  width: 100%;
+  height: 100%;
+  padding-inline: 0;
+  padding-block: 0.875rem;
+  border-radius: .75rem;
+  border: none;
+  color: var(--always-white);
+}
+& .btn:hover {
+  background-color: var(--color-brand-hover);
+}
+
+@media (width >= 80em) {
+  .input-wrapper {
+    & input {
+      max-width: 24rem;
+    }
+  }
+}

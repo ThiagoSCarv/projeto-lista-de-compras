@@ -1,3 +1,13 @@
-.px-md {
-  padding-inline: var(--px-md);
+.desktop-only {
+  display: none;
+}
+
+.remove-iten {
+  display: none;
+}
+
+@media (width >= 80em) {
+  .desktop-only {
+    display: block;
+  }
 }

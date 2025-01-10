@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  flex-direction: column;
+  & > a {
+    align-self: center;
+    margin-top: 1.625rem;
+  }
+  .back {
+    margin-top: 2.125rem;
+  }
+  h1 {
+    margin-block: 1rem 2.75rem;
+  }
+}
+
+@media (width >= 80em) {
+  .back {
+    margin-top: 3.875rem;
+  }
+}

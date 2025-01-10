@@ -1,0 +1,57 @@
+.input-checkbox {
+  position: relative;
+  background-color: var(--background-secondary);
+  border-radius: .75rem;
+  padding-block: .75rem;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    margin-left: .75rem;
+    border: none;
+    &:hover {
+      border: none;
+    }
+    &:focus {
+      border: none;
+    }
+  }
+  .checkbox-image {
+    flex: 0 0 1.5rem;
+    height: 1.5rem;
+    max-width: 1rem;
+    max-height: 1rem;
+    margin-left: .75rem;
+    background-image: url(../../assets/icons/state=Default.svg);
+  }
+
+  &:hover, &:focus-within {
+    & .checkbox-image {
+        background-image: url(../../assets/icons/state=hover.svg);
+    }
+    
+  }
+
+  &:has(:checked) {
+    & .checkbox-image {
+        background-image: url(../../assets/icons/state=selected.svg);
+    }
+  }
+  
+  & .btn-remove {
+    border: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0;
+    background-image: url(../../assets/icons/recicle-bin.svg);
+    background-position: center;
+    background-color: var(--background-secondary);
+    margin-left: auto;
+    margin-right: .75rem;
+    z-index: 1;
+  }
+}
